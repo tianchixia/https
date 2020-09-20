@@ -6,18 +6,16 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 🇨🇳 cn2-gia-lax1.gododdy.xyz:443, server: cn2-gia-lax1.gododdy.xyz, port: 443, type: http, tls: true}
-  - {name: 🇨🇳 cn2-gia-lax1.gododdy.xyz:443 2, server: cn2-gia-lax1.gododdy.xyz, port: 443, type: http, tls: true}
   - {name: 🇨🇳 cn2-gia-lax2.extlscdn.com:443, server: cn2-gia-lax2.extlscdn.com, port: 443, type: http, tls: true}
   - {name: 🇨🇳 cn2-gia-lax3.extlscdn.com:443, server: cn2-gia-lax3.extlscdn.com, port: 443, type: http, tls: true}
+  - {name: 🇭🇰 hk1.jiuyou.co:4433, server: hk1.jiuyou.co, port: 4433, type: http, tls: true}
+  - {name: 🇭🇰 hk2.jiuyou.co:4433, server: hk2.jiuyou.co, port: 4433, type: http, tls: true}
   - {name: fanfanhai.xyz:443, server: fanfanhai.xyz, port: 443, type: http, tls: true}
   - {name: mmkker.xyz:465, server: mmkker.xyz, port: 465, type: http, tls: true}
-  - {name: www.mmkker.xyz:443, server: www.mmkker.xyz, port: 443, type: http, tls: true}
   - {name: 🇭🇰 hkbn1.ghelper.net:443, server: hkbn1.ghelper.net, port: 443, type: http, tls: true}
   - {name: 🇭🇰 hkcm.ghelper.net:443, server: hkcm.ghelper.net, port: 443, type: http, tls: true}
   - {name: jp4.ghelper.net:443, server: jp4.ghelper.net, port: 443, type: http, tls: true}
   - {name: jp.ghelper.net:443, server: jp.ghelper.net, port: 443, type: http, tls: true}
-  - {name: jp1.ghelper.net:443, server: jp1.ghelper.net, port: 443, type: http, tls: true}
-  - {name: 🇨🇳 jp1.cn-cloudflare.com:443, server: jp1.cn-cloudflare.com, port: 443, type: http, tls: true}
   - {name: 🇨🇳 in1.cn-cloudflare.com:443, server: in1.cn-cloudflare.com, port: 443, type: http, tls: true}
   - {name: nl1.tcdn.me:443, server: nl1.tcdn.me, port: 443, type: http, tls: true}
   - {name: membership-sg.tlsext.com:10799, server: membership-sg.tlsext.com, port: 10799, type: http, tls: true}
@@ -31,12 +29,8 @@ proxies:
   - {name: topic-nl.tlsext.com:10799, server: topic-nl.tlsext.com, port: 10799, type: http, tls: true}
   - {name: 🇨🇳 tw.ghelper.net:443, server: tw.ghelper.net, port: 443, type: http, tls: true}
   - {name: 🇬🇧 uk.cn-cloudflare.com:443, server: uk.cn-cloudflare.com, port: 443, type: http, tls: true}
-  - {name: 🇺🇸 us19.tcdn.me:443, server: us19.tcdn.me, port: 443, type: http, tls: true}
   - {name: 🇺🇸 usa.cn-cloudflare.com:443, server: usa.cn-cloudflare.com, port: 443, type: http, tls: true}
   - {name: charity-ru.tlsext.com:10799, server: charity-ru.tlsext.com, port: 10799, type: http, tls: true}
-  - {name: cdbecfc07d87bf975527daee721a447a.vultr-jp-nrt-01-0c73irq5.adguard.io:443, server: cdbecfc07d87bf975527daee721a447a.vultr-jp-nrt-01-0c73irq5.adguard.io, port: 443, type: http, tls: true}
-  - {name: 🇭🇰 cdbecfc07d87bf975527daee721a447a.do-gb-lon1-01-hk7z7xez.adguard.io:443, server: cdbecfc07d87bf975527daee721a447a.do-gb-lon1-01-hk7z7xez.adguard.io, port: 443, type: http, tls: true}
-  - {name: cdbecfc07d87bf975527daee721a447a.do-de-fra1-01.adguard.io:443, server: cdbecfc07d87bf975527daee721a447a.do-de-fra1-01.adguard.io, port: 443, type: http, tls: true}
   - {name: bv1.innlym.me:443, server: bv1.innlym.me, port: 443, type: http, tls: true}
   - {name: 🇨🇳 au1.cn-cloudflare.com:443, server: au1.cn-cloudflare.com, port: 443, type: http, tls: true}
   - {name: 🇨🇳 de.cn-cloudflare.com:443, server: de.cn-cloudflare.com, port: 443, type: http, tls: true}
@@ -47,18 +41,16 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇳 cn2-gia-lax1.gododdy.xyz:443
-      - 🇨🇳 cn2-gia-lax1.gododdy.xyz:443 2
       - 🇨🇳 cn2-gia-lax2.extlscdn.com:443
       - 🇨🇳 cn2-gia-lax3.extlscdn.com:443
+      - 🇭🇰 hk1.jiuyou.co:4433
+      - 🇭🇰 hk2.jiuyou.co:4433
       - fanfanhai.xyz:443
       - mmkker.xyz:465
-      - www.mmkker.xyz:443
       - 🇭🇰 hkbn1.ghelper.net:443
       - 🇭🇰 hkcm.ghelper.net:443
       - jp4.ghelper.net:443
       - jp.ghelper.net:443
-      - jp1.ghelper.net:443
-      - 🇨🇳 jp1.cn-cloudflare.com:443
       - 🇨🇳 in1.cn-cloudflare.com:443
       - nl1.tcdn.me:443
       - membership-sg.tlsext.com:10799
@@ -72,12 +64,8 @@ proxy-groups:
       - topic-nl.tlsext.com:10799
       - 🇨🇳 tw.ghelper.net:443
       - 🇬🇧 uk.cn-cloudflare.com:443
-      - 🇺🇸 us19.tcdn.me:443
       - 🇺🇸 usa.cn-cloudflare.com:443
       - charity-ru.tlsext.com:10799
-      - cdbecfc07d87bf975527daee721a447a.vultr-jp-nrt-01-0c73irq5.adguard.io:443
-      - 🇭🇰 cdbecfc07d87bf975527daee721a447a.do-gb-lon1-01-hk7z7xez.adguard.io:443
-      - cdbecfc07d87bf975527daee721a447a.do-de-fra1-01.adguard.io:443
       - bv1.innlym.me:443
       - 🇨🇳 au1.cn-cloudflare.com:443
       - 🇨🇳 de.cn-cloudflare.com:443
